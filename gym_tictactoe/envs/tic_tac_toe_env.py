@@ -58,7 +58,7 @@ class TicTacToeEnv(gym.Env):
         return observation, reward, self.done, info
 
     def _reset(self):
-        self.board = []
+        self.board = [[' ']*3 for i in range(3)]
         self.player = 'O'
         self.done = False
 
